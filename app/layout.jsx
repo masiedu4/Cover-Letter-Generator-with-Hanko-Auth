@@ -3,7 +3,7 @@ import { Rubik } from 'next/font/google'
 
 export const dynamic = 'force-dynamic'
 
-const rubik = Rubik({ subsets: ['latin'], preload: true })
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body>
         {children}
       </body>
     </html>
